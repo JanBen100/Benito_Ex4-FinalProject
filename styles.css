@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  background-color: white;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 128px;
+  color: red; /* Main color */
+}
+
+@media (max-width: 844px) {
+  h1 {
+    font-size: 64px;
+  }
+}
+
+/* Navbar Styles */
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.navbar-nav .nav-item {
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+}
+
+.navbar-nav .nav-link {
+  color: red; /* Main color */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s, background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  border-bottom-color: red;
+}
+
+.navbar-nav .nav-link:active {
+  background-color: lightgray;
+}
+
+/* Image Container */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+/* Modal Styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-dialog {
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.modal-header .modal-title {
+  margin: 0;
+}
+
+.modal-header .close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-img-top:hover {
+  cursor: pointer;
+}
+
+.modal:target {
+  display: block;
+}
+
+/* Description */
+.desc {
+  font-size: x-large;
+  font-weight: 200;
+}
+
+/* Section Titles */
+h2 {
+  font-weight: 900;
+  font-size: 48px;
+  color: red; /* Main color */
+}
+
+/* Footer Styles */
+.footer {
+  color: white;
+  background-color: red; /* Main color */
+}
+
+.info-newsletter h4 {
+  font-family: "Montserrat", sans-serif;
+  color: white; /* Footer text color */
+}
+
+.footer i {
+  color: white;
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-link {
+  position: relative;
+}
+
+/* Home Info */
+.home-info {
+  font-size: larger;
+  background-color: #FFEFED;
+  font-weight: 600;
+  border: 2px solid #FFDDDA;
+  border-radius: 3px;
+}
+
+/* Gallery Body */
+.gallery-body {
+  background-color: #212922;
+}
+
+/* Carousel */
+.carousel-inner {
+  border: 10px solid #f0f8ea;
+}
+
+/* Divider */
+.divider {
+  border-top: 128px solid Black;
+}
+
+/* Specific Non-bold Styling */
+.vision, .mission, .quality, .benitos-bs, .contact-us {
+  font-weight: normal;
+}
